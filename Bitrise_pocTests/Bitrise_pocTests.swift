@@ -28,6 +28,10 @@ class Bitrise_pocTests: XCTestCase {
     func testAdd(){
         XCTAssertEqual(A + B, 15)
     }
+    
+    func testSub(){
+        XCTAssertEqual(A - B, 5)
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
