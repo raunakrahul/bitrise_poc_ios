@@ -34,7 +34,7 @@ class Bitrise_pocTests: XCTestCase {
     }
     
     func testMul(){
-        XCTAssertEqual(A * B, 50)
+        XCTAssertNotEqual(A * B, 51)
     }
 
     func testPerformanceExample() {
