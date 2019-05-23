@@ -11,7 +11,7 @@ import XCTest
 
 class Bitrise_pocTests: XCTestCase {
 
-    let A = 10, B = 5
+    let A = 10, B = 5, C = 3
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -36,7 +36,12 @@ class Bitrise_pocTests: XCTestCase {
     func testMul(){
         XCTAssertEqual(A * B, 50)
     }
+    
 
+    func testadd1(){
+        XCTAssertEqual(A + B + C, 18)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
