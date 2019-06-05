@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182469C9ECA046A36C754BCB /* Pods_Bitrise_poc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED4ABB2E4B67711FD8D5923 /* Pods_Bitrise_poc.framework */; };
 		EBFFE6A3228C1C2800A8CCB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFFE6A2228C1C2800A8CCB6 /* AppDelegate.swift */; };
 		EBFFE6A5228C1C2800A8CCB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFFE6A4228C1C2800A8CCB6 /* ViewController.swift */; };
 		EBFFE6A8228C1C2800A8CCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFFE6A6228C1C2800A8CCB6 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7ED4ABB2E4B67711FD8D5923 /* Pods_Bitrise_poc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bitrise_poc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A174458FDB7D5C76EF343B53 /* Pods-Bitrise_poc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitrise_poc.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bitrise_poc/Pods-Bitrise_poc.release.xcconfig"; sourceTree = "<group>"; };
+		E10D6DB4D9ADD43071539803 /* Pods-Bitrise_poc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bitrise_poc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bitrise_poc/Pods-Bitrise_poc.debug.xcconfig"; sourceTree = "<group>"; };
 		EBFFE69F228C1C2800A8CCB6 /* Bitrise_poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bitrise_poc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBFFE6A2228C1C2800A8CCB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBFFE6A4228C1C2800A8CCB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182469C9ECA046A36C754BCB /* Pods_Bitrise_poc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EDAD7C5613F39821DF7C1EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E10D6DB4D9ADD43071539803 /* Pods-Bitrise_poc.debug.xcconfig */,
+				A174458FDB7D5C76EF343B53 /* Pods-Bitrise_poc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B1A3B8A4B73D3367D2DE50D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED4ABB2E4B67711FD8D5923 /* Pods_Bitrise_poc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBFFE696228C1C2600A8CCB6 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				EBFFE6B6228C1C4900A8CCB6 /* Bitrise_pocTests */,
 				EBFFE6C1228C1C4A00A8CCB6 /* Bitrise_pocUITests */,
 				EBFFE6A0228C1C2800A8CCB6 /* Products */,
+				2EDAD7C5613F39821DF7C1EA /* Pods */,
+				9B1A3B8A4B73D3367D2DE50D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBFFE6C7228C1C4A00A8CCB6 /* Build configuration list for PBXNativeTarget "Bitrise_poc" */;
 			buildPhases = (
+				C1976AEDD815962474E356E3 /* [CP] Check Pods Manifest.lock */,
 				EBFFE69B228C1C2700A8CCB6 /* Sources */,
 				EBFFE69C228C1C2700A8CCB6 /* Frameworks */,
 				EBFFE69D228C1C2700A8CCB6 /* Resources */,
@@ -250,6 +275,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1976AEDD815962474E356E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bitrise_poc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBFFE69B228C1C2700A8CCB6 /* Sources */ = {
@@ -430,17 +480,19 @@
 		};
 		EBFFE6C8228C1C4A00A8CCB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E10D6DB4D9ADD43071539803 /* Pods-Bitrise_poc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4E54C7856E;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9XM29EZF44;
 				INFOPLIST_FILE = Bitrise_poc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "TCS.Bitrise-poc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodside.willow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Willow Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,17 +500,19 @@
 		};
 		EBFFE6C9228C1C4A00A8CCB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A174458FDB7D5C76EF343B53 /* Pods-Bitrise_poc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4E54C7856E;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9XM29EZF44;
 				INFOPLIST_FILE = Bitrise_poc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "TCS.Bitrise-poc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.woodside.willow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Willow Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
