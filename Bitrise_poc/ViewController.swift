@@ -13,10 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //mailtoraunaksinha
-        // fs
-        // abc
-        // def
-        // vf
         // Do any additional setup after loading the view.
     }
 
